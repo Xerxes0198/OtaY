@@ -18,12 +18,9 @@ io.on('connection', function(socket)
   console.log("Derp connected");
 
 
-  socket.on('radioCheck', function(canvasEvent)
+  socket.on('radioCheck', function()
   {
-    //console.log("Radio Check Called");
-    console.log(canvasEvent);
-    console.log(canvasEvent.a);
-
+    console.log("Radio Check Called");
   });
 
   socket.on('canvasTouch', function(inX, inY)
