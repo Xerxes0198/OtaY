@@ -15,10 +15,9 @@ window.onload = function()
 
   setupEventHandlers(canvas, socket);
 
-
   //Set canvas size
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
+  canvas.width = document.body.clientWidth;
+  canvas.height = document.body.clientHeight;
   clearCanvas();
 }
 
