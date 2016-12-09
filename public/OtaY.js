@@ -7,19 +7,18 @@ window.onload = function()
   canvas = document.getElementById("canvas");
   ctx = canvas.getContext('2d');
 
-  socket.on('touch', function(location)
+  socket.on('touchUpdate', function(location)
   {
-    drawCirlce(location.locX, location.locY);
+    //drawCirlce(location.locX, location.locY);
+    navigator.vibrate(1);
   });
 
-  canvas.addEventListener('touchmove', function(Event)
-  {
-    event.preventDefault();
-    console.log('TOUCH DOWN!!')
-    socket.emit("radioCheck");
+  setupEventHandlers(canvas, socket);
 
-  }, false);
 
+  //Set canvas size
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
   clearCanvas();
 }
 
