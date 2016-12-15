@@ -36,7 +36,7 @@ drawCirlce = function(inX, inY)
   ctx.strokeStyle = '#000000';
   ctx.stroke();
   */
-  circles.push(new circle(inX, inY))
+  circles.push(new Circle(inX, inY))
 
   console.log(inX, inY);
 }

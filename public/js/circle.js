@@ -1,13 +1,8 @@
-class cirlce
+var Circle = Class.create();
+Circle.prototype =
 {
-  var x, y, radius;
-
-  constructor(inX, inY);
+  initialize: function(inX, inY)
   {
     this.x = inX;
-    this.y = inY;
-
-    this.radius = Math.random(1 * 3)
   }
-
-}
+};

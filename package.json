@@ -1,0 +1,26 @@
+{
+  "name": "OtaY",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "express": "~4.14.0",
+    "socket.io": "~1.5.0",
+    "moment": "~2.16.0",
+    "mysql": "~2.12.0",
+    "stringformat": "~0.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start" : "nodejs app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Xerxes0198/OtaY.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/Xerxes0198/OtaY/issues"
+  }
+}
